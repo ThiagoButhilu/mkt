@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Marketing On Demand — Marketing sem enrolação</title>
+  <meta name="description" content="Estratégia, branding, packaging e marketing para empresas que precisam pensar, decidir e executar melhor. São Paulo." />
+  <meta name="theme-color" content="#f2efe9" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%23111'/%3E%3Ccircle cx='32' cy='32' r='12' fill='none' stroke='%23ff5a16' stroke-width='6'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400..900&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+</head>
+<body data-theme="cream" class="antialiased">
+  <a href="#contact" class="sr-only focus:not-sr-only focus:fixed focus:left-3 focus:top-3 focus:z-[100] focus:rounded-full focus:bg-ink focus:px-4 focus:py-2 focus:text-cream">Ir para o contato</a>
+
+  <!-- NAV -->
+  <header id="nav" class="fixed inset-x-0 top-0 z-50 px-4 py-3 transition-transform duration-500 ease-[var(--ease-expo)] md:px-8 md:py-4">
+    <div class="flex items-center justify-between gap-4">
+      <a href="#top" class="flex items-center gap-3" aria-label="Marketing On Demand, início">
+        <span class="relative grid size-11 place-items-center">
+          <span class="logo-ring"></span>
+          <span class="grid size-[2.15rem] place-items-center rounded-full bg-[var(--fg)] text-[1.05rem] font-extrabold text-[var(--bg)] transition-colors duration-500">M</span>
+        </span>
+        <span class="text-[0.76rem] font-extrabold uppercase leading-[0.95] tracking-tight">Marketing<br />On Demand</span>
+      </a>
+
+      <nav class="hidden items-center gap-1 md:flex" aria-label="Principal">
+        <a class="rounded-full px-4 py-2 text-[0.95rem] font-medium opacity-70 transition-opacity hover:opacity-100" href="#work">Cases</a>
+        <a class="rounded-full px-4 py-2 text-[0.95rem] font-medium opacity-70 transition-opacity hover:opacity-100" href="#services">O que fazemos</a>
+        <a class="rounded-full px-4 py-2 text-[0.95rem] font-medium opacity-70 transition-opacity hover:opacity-100" href="#agency">A agência</a>
+        <a class="rounded-full px-4 py-2 text-[0.95rem] font-medium opacity-70 transition-opacity hover:opacity-100" href="#instagram">Instagram</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="#contact" class="pill hidden md:inline-flex">Falar com a gente <i data-arr></i></a>
+        <button id="menu-btn" class="pill md:hidden" aria-expanded="false" aria-controls="menu">
+          <span id="menu-label">Menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MENU MOBILE -->
+  <div id="menu" class="invisible fixed inset-0 z-40 flex flex-col justify-between bg-ink px-5 pb-8 pt-24 text-cream" aria-hidden="true" style="clip-path: circle(0px at calc(100% - 3rem) 2.6rem)">
+    <nav class="flex flex-col gap-1" aria-label="Menu">
+      <a class="menu-link" href="#work">Cases</a>
+      <a class="menu-link" href="#services">O que fazemos</a>
+      <a class="menu-link" href="#agency">A agência</a>
+      <a class="menu-link" href="#instagram">Instagram</a>
+      <a class="menu-link text-orange" href="#contact">Contato</a>
+    </nav>
+    <div class="flex flex-col gap-3">
+      <a id="menu-wa" class="btn btn-sun w-full justify-between" href="#" target="_blank" rel="noopener">Chamar no WhatsApp <i data-arr></i></a>
+      <p class="label text-sm opacity-60">São Paulo, Brasil</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO: o fio embolado é desenrolado pelo scroll e acerta o alvo -->
+    <section id="top" data-theme="cream" class="relative h-[260svh]" aria-label="Início">
+      <div class="sticky top-0 flex h-svh flex-col overflow-hidden px-5 pb-6 pt-[4.8rem] md:px-10 md:pb-9 md:pt-24">
+        <h1 class="display hero-stroke text-[clamp(3.1rem,15.2vw,13.5rem)] md:text-[clamp(3rem,11.6vw,13.5rem)]">
+          <span class="line"><span class="line-in">Marketing</span></span>
+          <span class="line">
+            <span class="line-in"><span class="max-md:block">sem</span> <span class="hollow max-md:block">enrolação.</span></span>
+          </span>
+        </h1>
+
+        <div id="scribble" class="relative my-3 min-h-[8rem] flex-1 md:my-4">
+          <svg class="absolute inset-0 size-full overflow-visible" aria-hidden="true"></svg>
+          <p id="hit" class="display absolute bottom-0 left-0 rounded-full bg-orange px-4 py-2 text-[1.15rem] text-white opacity-0 md:text-[1.5rem]" aria-live="polite">Na mosca.</p>
+        </div>
+
+        <div class="grid items-end gap-5 md:grid-cols-[1fr_auto] md:gap-10">
+          <p data-intro class="max-w-[34ch] text-[1.12rem] leading-snug md:text-[1.3rem]">
+            Estratégia antes de se preocupar com estética.<br class="hidden md:block" />
+            Ideias e soluções antes de partir para a execução.
+          </p>
+          <div class="flex flex-wrap items-center gap-3">
+            <a href="#contact" class="btn btn-hot">Falar com a gente <i data-arr></i></a>
+            <a href="#work" class="btn btn-line">Ver cases</a>
+          </div>
+        </div>
+        <p id="hint" class="label mt-4 flex items-center gap-2 text-sm opacity-60">
+          <span class="inline-block animate-bounce">↓</span> Role para desenrolar
+        </p>
+      </div>
+    </section>
+
+    <!-- IDEIA -->
+    <section id="ideia" data-theme="cream" class="px-5 py-24 md:px-10 md:py-44">
+      <p id="statement" class="display max-w-[16ch] text-[clamp(2.5rem,8.4vw,8rem)] md:max-w-[20ch]">
+        Você não precisa de mais uma ~agência~. Precisa de quem entenda o =problema= antes de abrir o Illustrator.
+      </p>
+    </section>
+
+    <!-- CASES -->
+    <section id="work" data-theme="ink" class="px-4 pb-24 pt-20 md:px-8 md:pb-40 md:pt-32">
+      <div class="mx-auto max-w-[96rem]">
+        <h2 class="display mb-12 max-w-[20ch] px-1 text-[clamp(1.9rem,5.2vw,4.4rem)] md:mb-20">
+          Algumas decisões que viraram marcas, embalagens e negócios mais claros.
+        </h2>
+        <div id="cases" class="flex flex-col gap-6 pb-[18svh] md:gap-10"></div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="services" data-theme="orange" class="px-5 py-24 md:px-10 md:py-40">
+      <div class="mx-auto max-w-[96rem]">
+        <h2 class="display mb-14 text-[clamp(3.4rem,15vw,14rem)] md:mb-24">
+          Não vendemos<br /><span class="hollow">peças.</span>
+        </h2>
+        <div id="stairs" class="border-b-2 border-[var(--fg)]"></div>
+      </div>
+    </section>
+
+    <!-- AGÊNCIA -->
+    <section id="agency" data-theme="sun" class="px-5 py-24 md:px-10 md:py-40">
+      <div class="mx-auto grid max-w-[96rem] items-center gap-14 md:grid-cols-[1.1fr_0.9fr] md:gap-20">
+        <div>
+          <h2 class="display text-[clamp(2.6rem,8.4vw,7.6rem)]">25 anos olhando o marketing do lado de dentro.</h2>
+          <div class="mt-8 max-w-[44ch] space-y-4 text-[1.15rem] leading-relaxed md:text-[1.3rem]">
+            <p>Experiência de gestão + cabeça de agência. A Marketing On Demand nasceu para ser o braço estratégico de empresas que precisam pensar, decidir e executar melhor.</p>
+          </div>
+        </div>
+        <button id="ring" type="button" class="relative mx-auto aspect-square w-full max-w-[26rem]" aria-label="Vinte e cinco anos de experiência. Toque para reanimar.">
+          <svg viewBox="0 0 320 320" class="size-full" aria-hidden="true"></svg>
+          <span class="pointer-events-none absolute inset-0 grid place-content-center text-center">
+            <span id="years" class="display text-[clamp(5.5rem,24vw,9rem)] tabular-nums">25</span>
+            <span class="label -mt-1 text-lg">anos</span>
+          </span>
+        </button>
+      </div>
+
+      <ul id="nots" class="mx-auto mt-20 max-w-[96rem] border-t-2 border-ink md:mt-32" role="list">
+        <li class="not border-b-2 border-ink py-5 md:py-7"><span class="display text-[clamp(1.9rem,6.4vw,5.4rem)]">Sem <span class="strike">departamentos gigantes</span>.</span></li>
+        <li class="not border-b-2 border-ink py-5 md:py-7"><span class="display text-[clamp(1.9rem,6.4vw,5.4rem)]">Sem <span class="strike">reuniões que poderiam ser um e-mail</span>.</span></li>
+        <li class="not border-b-2 border-ink py-5 md:py-7"><span class="display text-[clamp(1.9rem,6.4vw,5.4rem)]">Sem <span class="strike">criatividade desconectada do negócio</span>.</span></li>
+      </ul>
+    </section>
+
+    <!-- MARCAS -->
+    <section id="brands" data-theme="ink" class="overflow-hidden py-24 md:py-40">
+      <h2 class="display mb-12 max-w-[14ch] px-5 text-[clamp(2.4rem,7vw,6.4rem)] md:mb-20 md:px-10">Marcas que já passaram por aqui.</h2>
+      <div class="mq-wrap flex flex-col gap-4 md:gap-6" id="brand-rows" aria-label="Lista de marcas atendidas"></div>
+    </section>
+
+    <!-- INSTAGRAM -->
+    <section id="instagram" data-theme="cream" class="px-5 py-24 md:px-10 md:py-40">
+      <div class="mx-auto max-w-[96rem]">
+        <div class="mb-10 grid items-end gap-8 md:mb-16 md:grid-cols-[auto_1fr_auto] md:gap-12">
+          <svg class="size-28 md:size-36" viewBox="0 0 120 120" role="img" aria-label="Avatar da Marketing On Demand">
+            <circle cx="60" cy="60" r="60" fill="#ffc800" />
+            <text x="60" y="64" text-anchor="middle" font-size="38" font-weight="900" letter-spacing="-3" fill="#111">MoD</text>
+            <circle cx="60" cy="85" r="9" fill="none" stroke="#ff5a16" stroke-width="5" />
+          </svg>
+          <div>
+            <h2 class="display break-words text-[clamp(1.6rem,7.6vw,5.4rem)]">@mktondemand_oficial</h2>
+            <p class="mt-4 max-w-[40ch] text-[1.12rem] leading-snug md:text-[1.25rem]">Porque sua <b>marca</b> escuta o <b>mercado</b>, vê e interage com a <b>concorrência</b> e fala com o <b>público-alvo</b>.</p>
+          </div>
+          <a id="ig-follow" href="#" target="_blank" rel="noopener" class="btn btn-main w-fit">Seguir no Instagram <i data-arr></i></a>
+        </div>
+        <div id="ig-grid" class="-mx-5 flex snap-x snap-mandatory gap-3 overflow-x-auto px-5 pb-4 md:mx-0 md:grid md:grid-cols-4 md:gap-5 md:overflow-visible md:px-0 md:pb-0 [scrollbar-width:none]"></div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contact" data-theme="orange" class="px-5 py-24 md:px-10 md:py-40">
+      <div class="mx-auto grid max-w-[96rem] gap-14 md:grid-cols-[1fr_0.92fr] md:gap-16">
+        <div>
+          <h2 class="display text-[clamp(3rem,12.4vw,11rem)]">Tem um problema de marketing?</h2>
+          <p class="display mt-5 text-[clamp(1.6rem,4.4vw,3.6rem)] hollow">Vamos começar por ele.</p>
+
+          <ul class="mt-12 space-y-6 text-[1.1rem] md:mt-16" role="list">
+            <li><a id="mail" class="display text-[clamp(1rem,5vw,2.2rem)] underline decoration-[3px] underline-offset-[6px]" href="#"></a></li>
+            <li class="max-w-[30ch] leading-snug" id="addr"></li>
+            <li class="flex flex-wrap gap-3">
+              <a id="wa-direct" class="btn btn-main" target="_blank" rel="noopener" href="#">WhatsApp <i data-arr></i></a>
+              <a id="ig-direct" class="btn btn-line" target="_blank" rel="noopener" href="#">Instagram</a>
+            </li>
+          </ul>
+
+          <div class="relative mt-10 aspect-[4/3] max-w-[30rem] overflow-hidden rounded-3xl bg-ink/10 md:mt-14" id="map" data-map>
+            <p class="absolute inset-0 grid place-items-center text-sm opacity-60">Carregando mapa…</p>
+          </div>
+        </div>
+
+        <form id="brief" class="h-fit rounded-[2rem] bg-cream p-5 text-ink md:p-9" novalidate>
+          <fieldset>
+            <legend class="display text-[clamp(1.7rem,3.6vw,2.6rem)]">Qual é o problema?</legend>
+            <p class="mt-2 text-[0.98rem] opacity-70">Marque um ou mais. Leva menos de um minuto.</p>
+            <div id="problems" class="mt-5 flex flex-wrap gap-2.5"></div>
+          </fieldset>
+
+          <div class="mt-8 space-y-4">
+            <label class="block">
+              <span class="mb-1.5 block text-[0.95rem] font-semibold">Conta em uma frase <span class="font-normal opacity-60">(opcional)</span></span>
+              <textarea id="msg" name="msg" rows="3" class="field resize-none" placeholder="Ex.: vamos lançar uma linha nova e a embalagem não conversa com o preço."></textarea>
+            </label>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="block">
+                <span class="mb-1.5 block text-[0.95rem] font-semibold">Seu nome</span>
+                <input id="name" name="name" class="field" autocomplete="name" required />
+              </label>
+              <label class="block">
+                <span class="mb-1.5 block text-[0.95rem] font-semibold">WhatsApp</span>
+                <input id="phone" name="phone" class="field" type="tel" inputmode="tel" autocomplete="tel" placeholder="(11) 90000-0000" required />
+              </label>
+            </div>
+          </div>
+
+          <p id="form-status" class="mt-4 min-h-[1.5rem] text-[0.95rem] font-medium" role="status" aria-live="polite"></p>
+
+          <div class="mt-3 flex flex-col gap-3 sm:flex-row">
+            <button type="submit" class="btn btn-hot flex-1">Enviar pelo WhatsApp <i data-arr></i></button>
+            <button type="button" id="by-mail" class="btn btn-line">Prefiro e-mail</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer data-theme="ink" class="overflow-hidden px-5 pb-28 pt-20 md:px-10 md:pb-16 md:pt-32">
+    <div class="mx-auto max-w-[96rem]">
+      <p id="foot-word" class="display select-none whitespace-nowrap text-[clamp(2.6rem,13.6vw,15rem)]" aria-hidden="true">Marketing<br /><span class="hollow">On Demand</span></p>
+      <div class="label mt-10 flex flex-wrap items-center justify-between gap-3 text-sm opacity-70">
+        <span>Marketing On Demand — São Paulo, Brasil</span>
+        <span>© 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a id="fab" href="#" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp"
+     class="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-4 z-40 flex translate-y-24 items-center gap-2 rounded-full bg-sun py-3.5 pl-4 pr-5 font-bold text-ink shadow-[0_10px_30px_-10px_rgb(0_0_0/0.5)] transition-transform duration-500 ease-[var(--ease-expo)] md:bottom-6 md:right-6">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4.2A8 8 0 1 1 8.3 18.8z"/><path d="M9 9.5c.3 2.2 2.3 4.3 5 5l1.2-1.3-1.9-1-.9.7c-.8-.4-1.6-1.2-2-2l.7-.9-1-1.9z" fill="currentColor" stroke="none"/></svg>
+    <span class="hidden sm:inline">WhatsApp</span>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
